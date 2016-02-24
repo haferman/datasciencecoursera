@@ -5,12 +5,9 @@ This code book basically describes the variables, the data, and transformations 
 ### Getting and Cleaning Data Course Project
  
 The data comes from:
-
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-See the "README.md" file for the instructions for the assignment.
-
-I used the "data.table" and "dplyr" libraries. 
+See the "README.md" file for the instructions for the assignment. I used the "data.table" and "dplyr" libraries. 
 
 ### Overview of code
 
