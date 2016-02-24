@@ -14,7 +14,7 @@ See the "README.md" file for the instructions for the assignment. I used the "da
 Initialization: I'm running on a Linux system. I first set my working directory to the location where I am running my R code for the Cousera course. I then download the zipfile containing the data, and uncompress it. Then I followed the steps in the assignment. Some details are given below for each of the steps. I did most of my work in RStudio and analyzed the data, wrote a bit of code, and once everything was working, I did a commit and push to github.
 
 The code follows. I find it to be self-documenting. 
-
+```
 # Step 1: merge the training and test datasets into one dataset.
 subject_train <- read.table("./train/subject_train.txt", header = FALSE)
 y_train <- read.table("./train/y_train.txt", header = FALSE)
@@ -69,3 +69,4 @@ names(data)<-gsub("tBody", "TimeBody", names(data))
 tidydata <-aggregate(. ~subject + activity, data, mean)
 tidydata <-tidydata[order(tidydata$subject,tidydata$activity),]
 write.table(tidydata, file = "./tidyout.txt",row.names=FALSE)
+```
